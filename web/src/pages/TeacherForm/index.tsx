@@ -6,6 +6,7 @@ import Input from '../../components/Input';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
 import Textarea from '../../components/TextArea';
+import Select from '../../components/Select';
 
 function TeacherForm() {
     return (
@@ -24,7 +25,17 @@ function TeacherForm() {
                 </fieldset>
                 <fieldset>
                     <legend>Sobre a aula</legend>
-                    <Input name="subject" label="Matéria" />
+                    <Select
+                        firstOption="Seleciona uma máteria"
+                        name="subject"
+                        label="Matéria"
+                        options={[
+                            { value: "Artes", label: "Artes" },
+                            { value: "Matemática", label: "Matemática" },
+                            { value: "Quimica", label: "Quimica" },
+                            { value: "Geografia", label: "Geografia" }
+                        ]}
+                    />
                     <Input name="cost" label="Custo da aula por hora" />
                 </fieldset>
 
