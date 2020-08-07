@@ -34,7 +34,7 @@ function TeacherList() {
                             { value: "3", label: "Quarta-feira" },
                             { value: "4", label: "Quint-feira" },
                             { value: "5", label: "Sexta-feira" },
-                            { value: "5", label: "Sabado" },
+                            { value: "6", label: "Sabado" },
                         ]}
                     />
                     <Input name="time" label="Hora" type="time" />
