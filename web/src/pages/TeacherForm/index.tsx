@@ -16,6 +16,7 @@ function TeacherForm() {
                 description="O primeiro passo é preencher esse formulário de inscrição"
             />
             <main>
+
                 <fieldset>
                     <legend>Seus dados</legend>
                     <Input name="name" label="Nome completo" />
@@ -23,6 +24,7 @@ function TeacherForm() {
                     <Input name="whatsapp" label="Whatsapp" />
                     <Textarea name="bio" label="Biografia" />
                 </fieldset>
+
                 <fieldset>
                     <legend>Sobre a aula</legend>
                     <Select
@@ -37,6 +39,34 @@ function TeacherForm() {
                         ]}
                     />
                     <Input name="cost" label="Custo da aula por hora" />
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        Horários disponíveis
+                        <button type="button">
+                            + Novo horário
+                        </button>
+                    </legend>
+
+                    <div className="schedule-item">
+                        <Select
+                            firstOption="Selecione um dia"
+                            name="week_day"
+                            label="Dia da semana"
+                            options={[
+                                { value: "0", label: "Domingo" },
+                                { value: "1", label: "Segunda-feira" },
+                                { value: "2", label: "Terça-feira" },
+                                { value: "3", label: "Quarta-feira" },
+                                { value: "4", label: "Quint-feira" },
+                                { value: "5", label: "Sexta-feira" },
+                                { value: "5", label: "Sabado" },
+                            ]}
+                        />
+                        <Input name="from" label="Das" type="time" />
+                        <Input name="to" label="Até" type="time" />
+                    </div>
                 </fieldset>
 
                 <footer>
