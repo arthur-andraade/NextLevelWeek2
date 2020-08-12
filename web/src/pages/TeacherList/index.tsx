@@ -40,7 +40,7 @@ function TeacherList() {
             <PageHeader title="Estes são os proffys disponíveis">
                 <form id="search-teachers" onSubmit={serachTeacher}>
                     <Select
-                        firstOption="Selecione uma máteria"
+                        hintText="Selecione uma máteria"
                         name="subject"
                         label="Matéria"
                         value={subject}
@@ -49,11 +49,17 @@ function TeacherList() {
                             { value: "Artes", label: "Artes" },
                             { value: "Matemática", label: "Matemática" },
                             { value: "Quimica", label: "Quimica" },
-                            { value: "Geografia", label: "Geografia" }
+                            { value: "Geografia", label: "Geografia" },
+                            { value: "Física", label: "Física" },
+                            { value: "Gramática", label: "Gramática" },
+                            { value: "História", label: "História" },
+                            { value: "Filosofia", label: "Filosofia" },
+                            { value: "Literatura", label: "Filosofia" },
+                            { value: "Biologia", label: "Biologia" }
                         ]}
                     />
                     <Select
-                        firstOption="Selecione um dia"
+                        hintText="Selecione um dia"
                         name="week_day"
                         label="Dia da semana"
                         value={week_day}

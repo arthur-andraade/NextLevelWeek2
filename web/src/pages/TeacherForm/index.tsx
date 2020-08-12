@@ -110,7 +110,7 @@ function TeacherForm() {
                     <fieldset>
                         <legend>Sobre a aula</legend>
                         <Select
-                            firstOption="Seleciona uma máteria"
+                            hintText="Seleciona uma máteria"
                             name="subject"
                             label="Matéria"
                             value={subject}
@@ -145,7 +145,7 @@ function TeacherForm() {
                                         <div className="schedule-item" key={scheduleItem.week_day}>
                                             <Select
                                                 value={scheduleItem.week_day}
-                                                firstOption="Selecione um dia"
+                                                hintText="Selecione um dia"
                                                 name="week_day"
                                                 label="Dia da semana"
                                                 onChange={(e) => { setScheduleItemValue(index, 'week_day', e.target.value) }}

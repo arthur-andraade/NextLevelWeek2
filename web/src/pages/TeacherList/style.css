@@ -65,4 +65,7 @@
         margin: 0 auto;
     }
 
+    #search-teachers .select-block select{
+        width: 225px;
+    }
 }
